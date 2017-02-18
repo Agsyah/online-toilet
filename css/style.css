@@ -1,0 +1,588 @@
+/***********************************
+  Gritter Notif CSS
+************************************/
+#gritter-notice-wrapper {
+	position:fixed;
+	top:20px;
+	right:20px;
+	width:301px;
+	z-index:9999;
+}
+#gritter-notice-wrapper.top-left {
+    left: 20px;
+    right: auto;
+}
+#gritter-notice-wrapper.bottom-right {
+    top: auto;
+    left: auto;
+    bottom: 20px;
+    right: 20px;
+}
+#gritter-notice-wrapper.bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 20px;
+}
+.gritter-item-wrapper {
+	position:relative;
+	margin:0 0 10px 0;
+	background:url(img/ie-spacer.gif);
+}
+.gritter-top {
+	background:url(img/gritter.png) no-repeat left -30px;
+	height:10px;
+}
+.hover .gritter-top {
+	background-position:right -30px;
+}
+.gritter-bottom {
+	background:url(img/gritter.png) no-repeat left bottom;
+	height:8px;
+	margin:0;
+}
+.hover .gritter-bottom {
+	background-position: bottom right;
+}
+.gritter-item {
+	display:block;
+	background:url(img/gritter.png) no-repeat left -40px;
+	color:#eee;
+	padding:2px 11px 8px 11px;
+	font-size: 11px;
+	font-family:verdana;
+}
+.hover .gritter-item {
+	background-position:right -40px;
+}
+.gritter-item p {
+	padding:0;
+	margin:0;
+	word-wrap:break-word;
+}
+.gritter-close {
+	display:none;
+	position:absolute;
+	top:5px;
+	left:3px;
+	background:url(img/gritter.png) no-repeat left top;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	text-indent:-9999em;
+}
+.gritter-title {
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 7px 0;
+	display:block;
+	text-shadow:1px 1px 0 #000;
+}
+.gritter-image {
+	width:48px;
+	height:48px;
+	float:left;
+}
+.gritter-with-image,
+.gritter-without-image {
+	padding:0;
+}
+.gritter-with-image {
+	width:220px;
+	float:right;
+}
+.gritter-light .gritter-item,
+.gritter-light .gritter-bottom,
+.gritter-light .gritter-top,
+.gritter-light .gritter-close {
+    background-image: url(./img/gritter-light.png);
+    color: #222;
+}
+.gritter-light .gritter-title {
+    text-shadow: none;
+}
+/*************************************************
+*  ATU (Antri Toilet Umum) CSS - Rubi Jihantoro
+*  jihantoro8@gmail.com
+*  kutemukan.com/profile/ruby/
+**************************************************/
+/****************************
+  Main El - Rubi Jihantoro
+*****************************/
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #26AD6F;
+}
+.title {
+  text-align: center;
+  font-family: 'Century Gothic';
+  letter-spacing: 1px;
+   text-shadow: 1px 1px 2px rgba(34,34,34,0.4);
+}
+/*************************
+  Home - Rubi Jihantoro
+**************************/
+.home {
+  width: 800px;
+  margin: 200px auto;
+  background-color: rgba(34,34,34,0.7);
+  padding: 50px 0px 0px;
+  border-radius: 0px 0px 0px 5px;
+}
+.home:before {
+  margin: -340px 0px 145px 0px !important;
+  content:' ';
+  position: absolute !important;
+  border-color: transparent transparent rgba(34,34,34,0.8) transparent;
+  border-style: solid;
+  border-width: 145px;
+  z-index: 455 !important;
+}
+.home:after {
+  margin: -990px 0px 145px 510px !important;
+  content:' ';
+  position: absolute !important;
+  border-color: transparent transparent rgba(34,34,34,0.8) transparent;
+  border-style: solid;
+  border-width: 145px;
+  z-index: 455 !important;
+}
+.tembok {
+  position: absolute;
+  width: 200px;
+  height: 600px;
+  margin: -80px 0px 0px 800px;
+  background-color: rgba(34,34,34,0.7);
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  box-shadow: 0px 25px 2px #59C090, 0 0 0px #59C090, 0 0 0px #59C090;
+}
+.genteng {
+  width: 510px;
+  height: 145px;
+  background-color: rgba(34,34,34,0.8);
+  position: absolute;
+  margin: -195px 5px 0px 145px;
+}
+/*************************
+  LAMP - Rubi Jihantoro
+**************************/
+img {
+  -ms-touch-action:manipulation;
+  touch-action:manipulation;
+  -webkit-user-drag:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  user-drag:none;
+}
+.wcinfo {
+  position: absolute;
+  margin: 205px 0px 0px 480px;
+}
+.brokelamp2 {
+  position: absolute;
+  margin: -50px 0px 0px 380px;
+  animation:stars-pulse 1s infinite alternate;
+}
+.brokelamp3 {
+  position: absolute;
+  margin: -50px 0px 0px 260px;
+  animation:stars-pulse 2s infinite alternate;
+}
+.brokelamp4 {
+  position: absolute;
+  margin: -50px 0px 0px 140px;
+  animation:stars-pulse 3s infinite alternate;
+}
+.brokelamp5 {
+  position: absolute;
+  margin: -50px 0px 0px 20px;
+  animation:stars-pulse 4s infinite alternate;
+}
+.brokelamp6 {
+  position: absolute;
+  margin: -50px 0px 0px 530px;
+  animation:stars-pulse 2s infinite alternate;
+}
+.brokelamp7 {
+  position: absolute;
+  margin: -50px 0px 0px 680px;
+  animation:stars-pulse 1.5s infinite alternate;
+}
+@keyframes stars-pulse{ 0% { opacity:0.1 } 100% { opacity:0.8 } }
+/**************************
+  Door - Rubi Jihantoro
+***************************/
+.door {
+  width: 500px;
+  margin: 100px auto;
+}
+.door .main-door {
+  width: 300px;
+  height: 450px;
+  background-color: rgba(34,34,34,0.5);
+  max-width: 100%;
+  box-shadow: 5px 5px 5px #CDCBCC;
+  border-radius: 5px 5px 0px 0px;
+}
+.door .door-info:before {
+  margin: -35px 0px 145px 27px !important;
+  content:' ';
+  position: absolute !important;
+  border-color: transparent transparent #3176B1 transparent;
+  border-style: dotted solid;
+  border-width: 15px;
+  z-index: 455 !important;
+}
+.door .door-info {
+  width: 150px;
+  height: 60px;
+  background-color: #3176B1;
+  color:white;
+  text-align: center;
+  font-family: 'Calibri';
+  position: absolute;
+  padding: 5px 5px 0px;
+  border-radius: 5px;
+  margin: 55px 0px 0px 70px;
+}
+.door .main-door > .gagang {
+  width: 60px;
+  height: 20px;
+  background-color: #4183D7;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+  margin: 203px 0px 0px 200px;
+  border: 2px solid #4D69A1;
+  cursor: pointer;
+}
+.door .main-door > .anu-nya-gagang {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #4183D7;
+  position: absolute;
+  margin: 200px 0px 0px 250px;
+  border: 2px solid #4D69A1;
+  cursor: pointer;
+}
+
+.door .main-door > .gagang:hover,
+.door .main-door > .anu-nya-gagang:hover {
+  border: 2px solid #3AC0FF;
+  box-shadow: 1px 1px 2px #3AC0FF, 0 0 25px #3AC0FF, 0 0 5px #3AC0FF;
+}
+/*****************************
+  Vandalisme - Rubi Jihantoro
+******************************/
+.vandalisme1 {
+  position: absolute;
+  color: red;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'Gadugi';
+  margin: 380px 0px 0px 10px;
+  -ms-transform: matrix(1, 0.1, 0.1, 1, 150, 0);
+  -webkit-transform: matrix(1, 0.1, 0.1, 1, 150, 0);
+  transform: matrix(1, 0.1, 0.1, 1, 150, 0);
+}
+.vandalisme2 {
+  font-size: 25px;
+  position: absolute;
+  color: white;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'Catatan Perjalanan';
+  margin: 380px 0px 0px 10px;
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.vandalisme3 {
+  font-size: 13px;
+  position: absolute;
+  color: #8A8A8A;
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'Arial';
+  margin: 130px 0px 0px 10px;
+  -ms-transform: rotate(-5deg); 
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.vandalisme4 {
+  font-size: 13px;
+  position: absolute;
+  color: #E1DEDE;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Arial';
+  margin: 300px 0px 0px 170px;
+  -ms-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg); 
+}
+.vandalisme5 {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  color: #DB2828;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Arial';
+  margin: 350px 0px 0px 210px;
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); 
+}
+.vandalisme6 {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  color: #E1E1E1;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  font-family: 'Arial';
+  margin: 310px 0px 0px 10px;
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg); 
+}
+.vandalisme1:hover,
+.vandalisme2:hover,
+.vandalisme3:hover,
+.vandalisme4:hover,
+.vandalisme5:hover,
+.vandalisme6:hover {
+  text-shadow: 1px 1px 2px #DB2828, 0 0 25px #DB2828, 0 0 5px #DB2828;
+  cursor: pointer;
+}
+/**********************************
+  Circle Button - Rubi Jihantoro
+***********************************/
+.button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.green.button {
+  background-color: #59C090;
+  position: absolute;
+  margin: 320px 0px 0px 725px;
+  z-index: 10;
+  cursor: pointer;
+}
+.red.button {
+  background-color: #DB2828;
+  position: absolute;
+  margin: 320px 0px 0px 680px;
+  z-index: 10;
+  cursor: pointer;
+}
+.blue.button {
+  background-color: #1E88E5;
+  position: absolute;
+  margin: 320px 0px 0px 703px;
+  z-index: 10;
+  cursor: pointer;
+}
+/*****************************
+  List User - Rubi Jihantoro
+******************************/
+.list {
+  position: absolute;
+  background-color: transparent;
+  padding: 5px 15px 0px;
+  margin: 80px 0px 0px 480px;
+  max-width: 310px;
+}
+.list.info {
+  position: absolute;
+  background-color: transparent;
+  padding: 15px;
+  margin: 80px 0px 0px 630px;
+}
+.list > .item {
+  color: white;
+  font-size: 13px;
+  font-family: 'Gadugi';
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 40%;
+}
+.list > .active.item {
+  background-color: rgba(30, 136, 229,0.5);
+}
+.list > .item:hover {
+  background-color: rgba(225,225,225,0.3);
+}
+.mem-store {
+  display: none;
+}
+.list.user {
+  height: 135px;
+  overflow-y: auto !important;
+}
+/*********************************
+  New User Modal - Rubi Jihantoro
+**********************************/
+.new-user {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:rgba(34,34,34,0.6);
+  left:0%;
+  top:0%;
+  text-align: center;
+  z-index: 500;
+}
+#yourname {
+  margin-top: 20%;
+  width: 200px;
+  padding: 10px;
+  font-weight: bolder;
+  color: #8c8c8c;
+  border: 1px solid transparent;
+}
+#yourtime {
+  margin-top: 20%;
+  width: 200px;
+  padding: 10px;
+  font-weight: bolder;
+  color: #8c8c8c;
+  margin-left: -5px;
+  border: 1px solid transparent;
+}
+#yourmoney {
+  margin-top: 20%;
+  width: 200px;
+  padding: 10px;
+  font-weight: bolder;
+  color: #8c8c8c;
+  margin-left: -5px;
+  border: 1px solid transparent;
+}
+.antri-btn {
+  display: inline-block;
+  background-color: #3AC0FF;
+  padding: 8px 9px 11px 9px;
+  color: white;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  margin-left: -5px;
+  cursor: pointer;
+}
+.antri-btn:hover {
+  background-color: #1ab6ff;
+}
+.cancelantri-btn {
+  display: inline-block;
+  background-color: #DB2828;
+  padding: 8px 9px 11px 9px;
+  color: white;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  margin-right: -5px;
+  cursor: pointer;
+}
+.cancelantri-btn:hover {
+  background-color: #DB2828;
+}
+.hsb {
+  position: absolute;
+  width: 20px;
+  height: 155px;
+  background-color: #26AD6F;
+  z-index: 5;
+  margin: 80px 0px 0px 800px;
+}
+/********************************
+  Toilet Info - Rubi Jihantoro
+*********************************/
+.ti1 {
+  position: absolute;
+  color: white;
+  font-family: 'Tahoma';
+  font-size: 10px;
+  margin: 240px 0px 0px 675px;
+}
+.ti2 {
+  position: absolute;
+  color: white;
+  font-family: 'Tahoma';
+  font-size: 10px;
+  margin: 254px 0px 0px 679px;
+  border-bottom: 1px solid grey;
+}
+.ti3 {
+  position: absolute;
+  color: white;
+  font-family: 'Tahoma';
+  font-size: 10px;
+  margin: 271px 0px 0px 679px;
+  border-bottom: 1px solid grey;
+}
+/*******************************
+  Alert - Rubi Jihantoro
+********************************/
+.publicalert {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:rgba(34,34,34,0.9);
+  left:0%;
+  top:0%;
+  text-align: center;
+  z-index: 501;
+}
+.publicalert > .alert {
+  width: 445px;
+  height: 335px;
+  background-color: white;
+  box-shadow: 1px 1px 2px #DB2828, 0 0 25px #DB2828, 0 0 5px #DB2828;
+  text-align: center;
+  margin: 15% auto;
+  border-radius: 20px;
+}
+.publicalert > .alert > img {
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+}
+.publicalert > .alert > h1 {
+  font-size: 25px;
+  font-family: 'Arial';
+  font-weight: bold;
+}
+.publicalert > .alert > .desc {
+  font-size: 15px;
+  font-family: 'Calibri';
+  font-weight: normal;
+}
+.publicalert > .alert > .accept {
+  padding: 10px;
+  background-color: #59C090;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Calibri';
+  width: 70%;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.publicalert > .alert > .accept:hover {
+  background-color: #3fa676;
+}

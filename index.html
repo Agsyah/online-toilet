@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Antri Kamar Mandi Online - Angular JS</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="home">
+		<div class="genteng"></div>
+		<div class="blue button"></div>
+		<div class="green button" title="Buat Antrian Baru"></div>
+		<div class="red button"></div>
+		<img src="img/lamp-vio.png" class="brokelamp2" alt="">
+
+		<img src="img/lamp-green.png" class="brokelamp3" alt="">
+		
+		<img src="img/lamp-pink.png" class="brokelamp4" alt="">
+		
+		<img src="img/lamp-gold.png" class="brokelamp5" alt="">
+		
+		<img src="img/lamp.png" class="brokelamp6" alt="">
+		
+		<img src="img/lamp-gold.png" class="brokelamp7" alt="">
+
+		<img src="img/wc-info.png" class="wcinfo" alt="">
+
+		<b class="ti1" title="Tarif Toilet Anda">Rp.<x>1000</x></b>
+		<b class="ti2" title="Pendapatan Anda Sesi Ini">Rp.<x>0</x></b>
+		<b class="ti3">Max Antri.<x>6</x></b>
+
+		<div class="hsb"></div>
+		<div class="list user" id="u-list">
+
+		</div>
+		<div class="door">
+			<div class="main-door">
+				<div class="door-info">
+					Toilet Umum
+				</div>
+				<div class="gagang"></div>
+				<div class="anu-nya-gagang"></div>
+				<div class="vandalisme1" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">WC ANGKER</div>
+				<div class="vandalisme2" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">RINTIHAN SIANG</div>
+				<div class="vandalisme3" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">Sukonto &amp; Friends</div>
+				<div class="vandalisme4" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">LELAKI IDAMAN </div>
+				<div class="vandalisme5" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">PERSIJA</div>
+				<div class="vandalisme6" title="Sangat TYDAC MENDIDIK! JANGAN DITIRU">CALON SARJANA</div>
+			</div>
+		</div>
+	</div>
+	<div class="new-user" style="display:none;">
+ 		<div class="cancelantri-btn">BATAL</div>
+ 		<input type="text" placeholder="Nama Anda" id="yourname">
+ 		<input type="text" placeholder="Waktu Penggunaan (Dalam Menit)" id="yourtime">
+ 		<input type="text" placeholder="Tentukan Saldo Mu" id="yourmoney">
+ 		<div class="antri-btn">ANTRI!</div>
+	</div>
+	<div class="publicalert" style="display:none;">
+		<div class="alert">
+			<img src="img/kucinglucuuu.jpg" alt="">
+			<h1>PERINGATAN!</h1>
+			<div class="desc">Pastikan Nama anda hanya menggunakan huruf <br>Pastikan anda hanya memasukkan angka untuk form Waktu Dan Uang <br>Pastikan Form Tidak Kosong!</div>
+			<div class="accept">Saya Mengerti!</div>
+		</div>
+	</div>
+	<div class="mem-store">
+		<div class="item" time="1" id="1" money="1000">Rubi Jihantoro</div>
+		<div class="item" time="2" id="2" money="1000">Sukonto Legowo</div>
+		<div class="item" time="4" id="3" money="1000">Fred The Dragon</div>
+		<div class="item" time="1" id="4" money="1000">Honey Lemon</div>
+		<div class="item" time="3" id="5" money="1000">Fluke</div>
+		<div class="item" time="1" id="6" money="1000">Pity</div>
+		<div class="item" time="5" id="7" money="1000">Bastard Bourbon</div>
+		<div class="item" time="2" id="8" money="1000">Megalodon</div>
+		<div class="item" time="2" id="9" money="1000">Ray</div>
+		<div class="item" time="1" id="10" money="1000">Example</div>
+	</div>
+	<div class="price-list-store">
+		<div class="item" price-for="1" price="1000">Rp. 1000</div>
+	</div>
+	<div class="mem-tem">
+		<div class="item" time="" id=""></div>
+	</div>
+	<div class="name-store" style="display:none;">
+		<div class="item" id="1">Sukonto Legowo</div>
+		<div class="item" id="2">Saiful Jameel</div>
+		<div class="item" id="3">Arbert Soponyono</div>
+		<div class="item" id="4">Erdogan</div>
+		<div class="item" id="5">Entees Soetisena</div>
+	</div>
+	<audio id="notif" src="sounds/notif.mp3" type="audio/mp3" style="display:none;"></audio>
+	<input style="display:none;" type="text" id="maxtime">
+	<input style="display:none;" type="text" id="whoisthere">
+	<input style="display:none;" type="text" value="500" id="price"> 
+	<input style="display:none;" type="text" id="income">
+	<input style="display:none;" type="text" id="inmywallet">
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
